@@ -19,7 +19,11 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
 
-  const isFriend = friends.find((friend) => friend._id === friendId);
+  // const isFriend = friends.find((friend) => friend._id === friendId);
+  let isFriend;
+  if (friends) {
+    isFriend = friends.find((friend) => friend._id === friendId);
+  }
 
   const patchFriend = async () => {
     const response = await fetch(
@@ -38,7 +42,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   return (
     <FlexBetween>
-      <FlexBetween>
+      <FlexBetween gap="1rem">
         <UserImage image={userPicturePath} size="55px" />
         <Box
           onClick={() => {
