@@ -23,7 +23,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
   const getUser = async () => {
     const response = await fetch(
-      `https://friendzy.onrender.com/users/${userId}`,
+      `https://friendzy-ln5k.onrender.com/users/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

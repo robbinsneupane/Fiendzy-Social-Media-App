@@ -23,7 +23,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `https://friendzy.onrender.com/users/${_id}/${friendId}`,
+      `https://friendzy-ln5k.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
