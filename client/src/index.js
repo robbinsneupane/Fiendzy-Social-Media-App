@@ -15,7 +15,6 @@ import {
 import { PersistGate } from "redux-persist/integration/react";
 import storage from "redux-persist/lib/storage";
 import App from "./App";
-// import { configuration } from "./configuration";
 import "./index.css";
 import authReducer from "./state";
 
